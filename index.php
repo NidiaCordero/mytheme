@@ -1,7 +1,5 @@
 
-<?php 
-
- get_header();?>
+<?php get_header();?>
   <!-- Header -->
   <header class="masthead bg-primary text-white text-center">
     <div class="container">
