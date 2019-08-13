@@ -64,20 +64,11 @@
 
   
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="<?php echo get_template_directory_uri(); ?>/vendor/jquery/jquery.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="<?php echo get_template_directory_uri(); ?>/vendor/jquery-easing/jquery.easing.min.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="<?php echo get_template_directory_uri(); ?>/js/BootstrapValidation.js"></script>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="<?php echo get_template_directory_uri(); ?>/js/freelancer.min.js"></script>
+  <?php 
+ // Ajout des css de manière dynamique grâce à functions.php
+ // https://developer.wordpress.org/reference/functions/wp_head/
+wp_head();
+?>
 
 </body>
 
