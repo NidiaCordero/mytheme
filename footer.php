@@ -64,12 +64,12 @@
 
   
 
-  <?php 
- // Ajout des css de manière dynamique grâce à functions.php
- // https://developer.wordpress.org/reference/functions/wp_head/
-wp_head();
-?>
+  <?php
+  // Ajout de la fonction wp_footer() qui va placer les scripts js qui doivent se trouver avant la fermeture de la balise body
+  // https://developer.wordpress.org/reference/functions/wp_footer/
+  wp_footer();
+  ?>
 
-</body>
+<body >
 
 </html>
