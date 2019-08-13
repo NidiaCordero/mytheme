@@ -203,7 +203,7 @@
   <script src="http://localhost:8888/wp-content/themes/montheme/vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
   <!-- Contact Form JavaScript -->
-  <script src="http://localhost:8888/wp-content/themes/montheme/js/jqBootstrapValidation.js"></script>
+  <script src="http://localhost:8888/wp-content/themes/montheme/js/BootstrapValidation.js"></script>
   <script src="http://localhost:8888/wp-content/themes/montheme/js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
