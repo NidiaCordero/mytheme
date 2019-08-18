@@ -18,7 +18,9 @@ class EnqueueScript
   wp_enqueue_style('font-lato', "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");	    wp_enqueue_style('font-lato', "https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
   wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/vendor/magnific-popup/magnific-popup.css');	    wp_enqueue_style('magnific-popup', get_template_directory_uri() . '/vendor/magnific-popup/magnific-popup.css');
   wp_enqueue_style('freelancer', get_template_directory_uri() . '/css/freelancer.min.css');	    wp_enqueue_style('freelancer', get_template_directory_uri() . '/css/freelancer.min.css');
-   // Ajout des scripts js	  // Ajout des scripts js
+  wp_enqueue_style('coding-theme', get_template_directory_uri() . '/css/coding-theme.css');
+  
+  // Ajout des scripts js	  // Ajout des scripts js
   // https://developer.wordpress.org/reference/functions/wp_enqueue_script/	  // https://developer.wordpress.org/reference/functions/wp_enqueue_script/
   wp_enqueue_script('jquery-perso', get_template_directory_uri() . '/vendor/jquery/jquery.min.js', null, true);	    wp_enqueue_script('jquery-perso', get_template_directory_uri() . '/vendor/jquery/jquery.min.js', null, true);
   wp_enqueue_script('bootstrap', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.bundle.min.js', ['jquery-perso'], null, true);	    wp_enqueue_script('bootstrap', get_template_directory_uri() . '/vendor/bootstrap/js/bootstrap.bundle.min.js', ['jquery-perso'], null, true);
