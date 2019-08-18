@@ -1,12 +1,8 @@
 <?php
- /**	class EnqueueScript
- * Fonction qui va ajouter des scripts dynamiquement afin que l'on puisse les inclures dans le thème avec wp_head() et wp_footer()	
- *	
- * @return void	
- */	
-function ajout_css_js()	
-{	{
-  /**
+
+class EnqueueScript
+    { {
+/**
    * Fonction qui va ajouter des scripts dynamiquement afin que l'on puisse les inclures dans le thème avec wp_head() et wp_footer()
    * Nous avons ajouter le mot public afin que cette méthode puisse être utiliser depuis l'exterieur. Cela veut dire que l'on peut créer une instance de cette class et puis faire appel à la méthode ( ex: $instance->methode() )
    *
