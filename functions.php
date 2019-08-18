@@ -6,6 +6,7 @@
 define('INCLUDE_DIR', get_template_directory() . "/includes");
 require_once(INCLUDE_DIR . '/enqueue-script.php');
 require_once(INCLUDE_DIR . '/menu.php');
+require_once(INCLUDE_DIR . '/theme-setup.php');
 
 
 function register_main_menu()
@@ -31,14 +32,7 @@ add_action('after_setup_theme', [MgMenu::class, 'register_main_menu']);
 // Ajout d'un écouteur d'événement de type filtre qui nous permet de changer les attributs des balises <a>
 // les add_action et add_filter peuvent avoit jusqu'à 4 paramêtre. Le 3ème pour l'ordre d'execution et le 4 ème pour le nombre de parammètre qui seront passer à la fonction callback
 add_filter('nav_menu_link_attributes', [MgMenu::class, 'ajout_menu_a_class'], 10, 3);
-function ajout_image_article()
-{
-  //Ajout de la fonctionnalité d'ajout d'image pour les posts pour ce thème ci
-  add_theme_support('post-thumbnails');
-  $test = 0;
-}
- // Ajout d'un écouteur d'événement pour activer les images mise en avant pour les post (article)
- add_action('init', 'ajout_image_article');
+
  /**
  * Fonction qui ajoute la possibilité de customiser la partie personnalisation du thème
  * //https://developer.wordpress.org/themes/customize-api/customizer-objects/
